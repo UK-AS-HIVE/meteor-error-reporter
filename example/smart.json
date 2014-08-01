@@ -1,0 +1,9 @@
+{
+  "packages": {
+    "bootstrap-3": {},
+    "meteor-error-reporter": {
+      "path": "../"
+    },
+    "bootboxjs": {}
+  }
+}

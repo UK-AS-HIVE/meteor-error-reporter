@@ -1,5 +1,5 @@
 <template name="errorTest">
-  <button id = "errorBtn"> Click me for Error </button>
+  <button id = "error-btn"> Click me for Error </button>
 </template>
 
 
@@ -11,7 +11,7 @@
 
 
 <template name="sendFeedback">
-  <a href="#" id="sendFeedback"> Send Feedback </a>
+  <span href="#" id="sendFeedback"> Send Feedback </span>
 </template>
 
 
@@ -31,4 +31,15 @@
   <span> See Details <btn id="seeDetails" class="glyphicon glyphicon-plus"></btn> </span>
   <div style="display:none" id="errorDetails">{{errorDetails}}</div>
   <h4> We're working on fixing this as soon as possible. Click OK to send us the error report</h4>
+</template>
+
+
+<template name="connectionMonitor">
+<div hidden>
+{{#if disconnected}}
+  {{showDisconnectMessage}}
+{{else}}
+  {{hideModal}}
+{{/if}}
+</div>
 </template>
