@@ -3,6 +3,7 @@ meteor-error-reporter
 Currently this serves only as a proof of concept.
 
 Current Features:
+
 1. Monitor connection to the server and display message if client gets disconnected, as well as when client reconnects. 
 2. Displays an Error Message to the user if a client unhandled error occurs.
 3. Basic feedback support
